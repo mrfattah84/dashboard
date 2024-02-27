@@ -1,0 +1,26 @@
+*{
+    font-family: "Roboto", sans-serif;
+}
+
+body{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    height: 100vh;
+}
+
+li{
+    list-style: none;
+}
+
+
+.sideBar{
+    background-color: #006BA6;
+    color: white;
+    display: grid;
+    grid-template-rows: 3fr 14fr 8fr 16fr;
+    gap: 50px;
+    padding-left: 50px;
+}
+
+
+
