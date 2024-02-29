@@ -5,8 +5,9 @@
 body{
     display: grid;
     grid-template-columns: 1fr 4fr;
-    height: 100vh;
     font-size: 1.5vw;
+    height: 100vh;
+    position: relative;
 }
 
 img{
@@ -55,6 +56,7 @@ ul{
     gap: 0.8vh;
     padding-left: 0.9vw;
     padding-top: 1.7vh;
+    position: sticky;
 }
 
 .page{
@@ -67,7 +69,7 @@ ul{
     justify-content: flex-end;
     background-color: white;
     height: 6vh;
-    padding: 1vw 2vw 1vw 1.5vw;
+    padding: 0.5vw 2vw 1vw 1.5vw;
     gap: 1.5vw;
     padding-right: 3vw;
 }
@@ -136,4 +138,46 @@ ul{
     display: grid;
     grid-template-columns: 2.5fr 1fr;
     grid-template-rows: 1fr 1fr;
+    padding: 4vh 1vw;
+    gap: 1.5vw;
+}
+
+.projectsC{
+    grid-row: 1/3;
+}
+
+h5{
+    margin: 0;
+}
+
+.projects{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin-top: 5px;
+    overflow-y:auto;
+}
+
+.card{
+    background-color: white;
+    border-radius: 0.5em;
+    padding: 1.3em;
+    height: 16vh;
+    border-left: 6px solid #D81159;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.card p{
+    font-size: 1vw;
+    margin: 0;
+    word-wrap: break-word;
+}
+
+.icons{
+    align-self: flex-end;
+    margin-top: auto;
+    display: flex;
+    gap: 1.4vw;
 }
